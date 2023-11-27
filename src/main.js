@@ -4,6 +4,7 @@ import CadastroViews from './views/CadastroViews.vue'
 import ValidacaoViews from './views/ValidacaoViews.vue'
 import HomeViews from './views/HomeViews.vue'
 import DashboardViews from './views/DashboardViews.vue'
+import ForumViews from './views/ForumViews'
 // 1 - import view
 import {createRouter, createWebHistory} from 'vue-router'  
 
@@ -14,7 +15,8 @@ const routes = [
   { path: '/cadastro', component: CadastroViews },
   {path: '/validacao', component: ValidacaoViews},
   {path: '/home', component: HomeViews},
-  {path: '/dashboard', component: DashboardViews}
+  {path: '/dashboard', component: DashboardViews},
+  {path:'/forum', component: ForumViews},
 ]
 
 
