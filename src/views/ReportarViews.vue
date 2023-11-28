@@ -20,6 +20,8 @@
       <!-- Conteúdo Central -->
       <div id="content">
         <h1>Reportar BUG</h1>
+        <h2>SORRY, Page in construction</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Page_Under_Construction.png" alt="Em construção">
     </div>
     </div>
   </template>

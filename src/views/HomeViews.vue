@@ -87,7 +87,18 @@
 
 <script>
 export default {
-  // Componente Vue.js
+  // Restante do seu código ...
+
+  methods: {
+    login() {
+      // Lógica de login aqui
+
+      // Supondo que o login foi bem-sucedido, redirecione para HomeViews
+      this.$router.push('/home');
+    },
+    
+    // Restante do seu código ...
+  }
 };
 </script>
 
