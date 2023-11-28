@@ -6,6 +6,8 @@ import HomeViews from './views/HomeViews.vue'
 import DashboardViews from './views/DashboardViews.vue'
 import ForumViews from './views/ForumViews'
 import ReportarViews from './views/ReportarViews'
+import CadastroViews from './views/CadastroViews'
+import EventosEncontros from './views/EventosEncontros'
 // 1 - import view
 import {createRouter, createWebHistory} from 'vue-router'  
 
@@ -19,6 +21,8 @@ const routes = [
   {path: '/dashboard', component: DashboardViews},
   {path:'/forum', component: ForumViews},
   {path:'/reportar', component: ReportarViews},
+  { path: '/eventos', component: EventosEncontros},
+  { path: '/cadastro', component: CadastroViews},
 ]
 
 

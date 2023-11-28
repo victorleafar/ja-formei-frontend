@@ -9,12 +9,11 @@
       </div>
       <hr>
       <ul id="menu">
-        <li>Página Inicial</li>
-        <li>Dashboard</li>
-        <li>Fórum</li>
-        <li>Usuários</li>
-        <li>Eventos e Encontros</li>
-        <li>Reportar um Bug</li>
+        <li @click="inicialpage" class="inicialpage">Página Inicial</li>
+        <li @click="dashboard" class="dashboard">Dashboard</li>
+        <li @click="forum" class="forum">Fórum</li>
+        <li @click="eventos" class="eventos">Eventos e Encontros</li>
+        <li @click="reportarBug" class="bug">Reportar um Bug</li>
       </ul>
     </div>
 
@@ -87,18 +86,28 @@
 
 <script>
 export default {
-  // Restante do seu código ...
-
   methods: {
-    login() {
-      // Lógica de login aqui
-
-      // Supondo que o login foi bem-sucedido, redirecione para HomeViews
+    inicialpage() {
       this.$router.push('/home');
     },
-    
-    // Restante do seu código ...
-  }
+    dashboard() {
+      // Lógica para a opção Dashboard
+      this.$router.push('/dashboard');
+    },
+    forum() {
+      // Lógica para a opção Fórum
+      this.$router.push('/forum');
+    },
+    eventos() {
+      // Lógica para a opção Eventos e Encontros
+      this.$router.push('/eventos');
+    },
+    reportarBug() {
+      // Lógica para a opção Reportar um Bug
+      this.$router.push('/reportar');
+    },
+    // Adicione outros métodos conforme necessário
+  },
 };
 </script>
 
