@@ -33,23 +33,17 @@
 
 <script>
 export default {
-  data() {
-    return {
-      username: '',
-      password: '',
-      showModal: false
-    };
-  },
+  // Restante do seu código ...
+
   methods: {
     login() {
       // Lógica de login aqui
+
+      // Supondo que o login foi bem-sucedido, redirecione para HomeViews
+      this.$router.push('/home');
     },
-    openModal() {
-      this.showModal = true;
-    },
-    closeModal() {
-      this.showModal = false;
-    }
+    
+    // Restante do seu código ...
   }
 };
 </script>
