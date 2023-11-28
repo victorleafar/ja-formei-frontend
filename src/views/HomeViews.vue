@@ -19,65 +19,144 @@
 
     <!-- Conteúdo Central -->
     <div id="content">
-      <h1>Página Inicial</h1>
+      <div id="header">
+        <h1>Fórum</h1>
+        <div id="search-notification">
+          <img src="https://icones.pro/wp-content/uploads/2022/02/icone-de-cloche-bleue.png" alt="Ícone de Notificação">
+          <i class="fas fa-bell"></i>
+          <input type="text" placeholder="Pesquisar">
+        </div>
+      </div>
 
       <!-- Modais de Indicadores -->
       <div class="modal-container">
-    <div class="indicator-modal modal-1">
-      <h3>Título 1</h3>
-      <p>Número Indicados: 100</p>
-      <p>Descrição: Lorem ipsum dolor sit amet.</p>
-    </div>
+        <div class="indicator-modal modal-1">
+          <h3>Título 1</h3>
+          <p>Número Indicados: 100</p>
+          <p>Descrição: Lorem ipsum dolor sit amet.</p>
+        </div>
 
-    <div class="indicator-modal modal-2">
-      <h3>Título 2</h3>
-      <p>Número Indicados: 150</p>
-      <p>Descrição: Lorem ipsum dolor sit amet.</p>
-    </div>
+        <div class="indicator-modal modal-2">
+          <h3>Título 2</h3>
+          <p>Número Indicados: 150</p>
+          <p>Descrição: Lorem ipsum dolor sit amet.</p>
+        </div>
 
-    <div class="indicator-modal modal-3">
-      <h3>Título 3</h3>
-      <p>Número Indicados: 200</p>
-      <p>Descrição: Lorem ipsum dolor sit amet.</p>
-    </div>
-  </div>
+        <div class="indicator-modal modal-3">
+          <h3>Título 3</h3>
+          <p>Número Indicados: 200</p>
+          <p>Descrição: Lorem ipsum dolor sit amet.</p>
+        </div>
+      </div>
 
       <!-- Lista de Últimos Tópicos -->
-      <div id="recent-topics" lass="indicator-modal">
+      <div id="recent-topics" class="forum-section">
         <h2>Últimos Tópicos</h2>
-        <ul>
-          <li>Título do Tópico 1 - Categoria: A - Participantes: 10</li>
-          <li>Título do Tópico 2 - Categoria: B - Participantes: 15</li>
-          <li>Título do Tópico 3 - Categoria: C - Participantes: 20</li>
-        </ul>
+        <table>
+          <thead>
+            <tr>
+              <th>Título do Tópico</th>
+              <th>Categoria</th>
+              <th>Tópicos</th>
+              <th>Participantes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Título do Tópico 1</td>
+              <td>Categoria: A</td>
+              <td>10</td>
+              <td>Participantes: 10</td>
+            </tr>
+            <tr>
+              <td>Título do Tópico 2</td>
+              <td>Categoria: B</td>
+              <td>15</td>
+              <td>Participantes: 15</td>
+            </tr>
+            <tr>
+              <td>Título do Tópico 3</td>
+              <td>Categoria: C</td>
+              <td>20</td>
+              <td>Participantes: 20</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
 
       <!-- Lista de Últimos Membros -->
-      <div id="recent-members" >
+      <div id="recent-members" class="forum-section">
         <h2>Últimos Membros</h2>
-        <ul>
-          <li><img src="https://png.pngtree.com/png-vector/20190321/ourmid/pngtree-vector-users-icon-png-image_856952.jpg" alt="Membro 1" class="member-photo"> Nome do Membro 1 - Graduação: A</li>
-          <li><img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="Membro 2" class="member-photo"> Nome do Membro 2 - Graduação: B</li>
-          <li><img src="https://cdn-icons-png.flaticon.com/512/219/219988.png" alt="Membro 3" class="member-photo"> Nome do Membro 3 - Graduação: C</li>
-        </ul>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Foto</th>
+                <th>Nome</th>
+                <th>Graduação</th>
+                <th>Membro desde</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <img src="https://png.pngtree.com/png-vector/20190321/ourmid/pngtree-vector-users-icon-png-image_856952.jpg" alt="Membro 1" class="member-photo">
+                </td>
+                <td>Nome do Membro 1</td>
+                <td>Graduação: A</td>
+                <td>Membro desde: 01/01/2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="Membro 2" class="member-photo">
+                </td>
+                <td>Nome do Membro 2</td>
+                <td>Graduação: B</td>
+                <td>Membro desde: 02/01/2023</td>
+              </tr>
+              <tr>
+                <td>
+                  <img src="https://cdn-icons-png.flaticon.com/512/219/219988.png" alt="Membro 3" class="member-photo">
+                </td>
+                <td>Nome do Membro 3</td>
+                <td>Graduação: C</td>
+                <td>Membro desde: 03/01/2023</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
 
     <!-- Menu Lateral Direito -->
     <div id="right-sidebar">
-      <div id="events-menu">
-        <h2>Eventos</h2>
+      <!-- Eventos Próximos -->
+      <div class="event-section">
+        <h2>Eventos Próximos</h2>
         <ul>
-          <li>Próximos Eventos</li>
-          <li>Últimos Eventos</li>
+          <li>Evento Próximo 1</li>
+          <li>Evento Próximo 2</li>
+          <li>Evento Próximo 3</li>
         </ul>
       </div>
 
-      <div id="friends-events-menu ">
+      <!-- Lista de Eventos -->
+      <div class="event-section">
+        <h2>Lista de Eventos</h2>
+        <ul>
+          <li>Evento 1</li>
+          <li>Evento 2</li>
+          <!-- Adicione mais eventos conforme necessário -->
+        </ul>
+      </div>
+
+      <!-- Eventos de Amigos -->
+      <div class="event-section">
         <h2>Eventos de Amigos</h2>
         <ul>
           <li>Evento do Amigo 1</li>
           <li>Evento do Amigo 2</li>
+          <!-- Adicione mais eventos de amigos conforme necessário -->
         </ul>
       </div>
     </div>
@@ -91,45 +170,29 @@ export default {
       this.$router.push('/home');
     },
     dashboard() {
-      // Lógica para a opção Dashboard
       this.$router.push('/dashboard');
     },
     forum() {
-      // Lógica para a opção Fórum
       this.$router.push('/forum');
     },
     eventos() {
-      // Lógica para a opção Eventos e Encontros
       this.$router.push('/eventos');
     },
     reportarBug() {
-      // Lógica para a opção Reportar um Bug
       this.$router.push('/reportar');
     },
-    // Adicione outros métodos conforme necessário
   },
 };
 </script>
 
 <style scoped>
-/* Estilos adicionais podem ser adicionados aqui conforme necessário */
 #app {
   display: flex;
   min-height: 100vh;
 }
-.modal-1 {
-  border: 2px solid #F3FAF9; /* Borda vermelha */
-  background-color: #F3FAF9; /* Fundo amarelo */
-}
 
-.modal-2 {
-  border: 2px solid #F3FAF9; /* Borda verde */
-  background-color: #F3FAF9; /* Fundo azul claro */
-}
-
-.modal-3 {
-  border: 2px solid #F3FAF9; /* Borda azul */
-  background-color: #F3FAF9; /* Fundo salmão claro */
+h1 {
+  text-align: left;
 }
 
 #sidebar {
@@ -170,33 +233,96 @@ hr {
   flex-direction: column;
 }
 
-.modal-container {
+#header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-#recent-topics,
-#recent-members {
+#search-notification {
+  display: flex;
+  align-items: center;
+}
+
+#search-notification img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+#search-notification i {
+  font-size: 20px;
+  color: #061494;
+  margin-right: 10px;
+}
+
+#search-notification input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forum-section {
+  background-color: #E1E7E9;
+  color: #061494;
+  padding: 20px;
   margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
-#recent-topics ul,
-#recent-members ul {
-  list-style: none;
-  padding: 0;
-  
+.forum-section h2 {
+  margin-bottom: 15px;
+  color: #061494;
 }
 
-#recent-topics li,
-#recent-members li {
+.forum-section table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.forum-section th,
+.forum-section td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.forum-section th {
+  background-color: #B5BDD9;
+  color: #061494;
+}
+
+.forum-section tbody tr {
   margin-bottom: 10px;
 }
 
-.member-photo {
+.forum-section tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.forum-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.forum-section li {
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.forum-section li img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.forum-section li span {
+  color: #061494;
 }
 
 #right-sidebar {
@@ -204,24 +330,25 @@ hr {
   background-color: #E1E7E9;
   color: #061494;
   padding: 20px;
-  height: 200vh; /* Ajustado para ocupar 100% da altura da viewport */
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  overflow-y: auto;
 }
 
-#events-menu,
-#friends-events-menu {
+.event-section {
   margin-bottom: 20px;
 }
 
-#events-menu ul,
-#friends-events-menu ul {
+.event-section h2 {
+  color: #061494;
+  margin-bottom: 10px;
+}
+
+.event-section ul {
   list-style: none;
   padding: 0;
 }
 
-#events-menu li,
-#friends-events-menu li {
+.event-section li {
   margin-bottom: 10px;
   cursor: pointer;
 }
@@ -240,4 +367,35 @@ hr {
   margin-right: 20px;
 }
 
+.member-info {
+  display: flex;
+  align-items: center;
+}
+
+.member-photo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.member-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.member-name {
+  font-weight: bold;
+  color: #061494;
+}
+
+.member-graduation,
+.member-joined {
+  color: #061494;
+}
+
+#recent-members .table-container {
+  max-height: 300px; /* Defina a altura máxima desejada */
+  overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+}
 </style>

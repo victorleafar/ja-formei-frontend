@@ -21,28 +21,41 @@
       <h1>Reportar BUG</h1>
       <!-- Formulário de Reportar Bug -->
       <div class="container">
-        <h2>Reportar Bug</h2>
         <form @submit.prevent="submitBugReport" class="bug-form">
-          <label for="title">Título:</label>
-          <textarea v-model="bugReport.title" required></textarea>
+          <div class="form-group">
+            <label for="title">Título:</label>
+            <textarea v-model="bugReport.title" required></textarea>
+          </div>
 
-          <label for="description">Descrição do Bug:</label>
-          <textarea v-model="bugReport.description" required></textarea>
+          <div class="form-group">
+            <label for="description">Descrição do Bug:</label>
+            <textarea v-model="bugReport.description" required></textarea>
+          </div>
 
-          <label for="type">Tipo de Bug:</label>
-          <select v-model="bugReport.type">
-            <option value="Functionality">Funcionalidade</option>
-            <option value="Accessibility">Acessibilidade</option>
-            <option value="UI">Interface do Usuário</option>
-            <option value="Usability">Usabilidade</option>
-            <option value="Performance">Desempenho</option>
-          </select>
+          <div class="form-group">
+            <label for="type">Tipo de Bug:</label>
+            <select v-model="bugReport.type">
+              <option value="Functionality">Funcionalidade</option>
+              <option value="Accessibility">Acessibilidade</option>
+              <option value="UI">Interface do Usuário</option>
+              <option value="Usability">Usabilidade</option>
+              <option value="Performance">Desempenho</option>
+            </select>
+          </div>
 
-          <label for="category">Categoria:</label>
-          <input type="text" v-model="bugReport.category" required>
+          <div class="form-group">
+            <label for="category">Categoria:</label>
+            <select v-model="bugReport.category">
+              <option value="Alta">Alta</option>
+              <option value="Média">Média</option>
+              <option value="Baixa">Baixa</option>
+            </select>
+          </div>
 
-          <label for="imageUpload">Anexar Imagens:</label>
-          <input type="file" id="imageUpload" accept="image/*" @change="handleImageUpload" multiple>
+          <div class="form-group">
+            <label for="imageUpload">Anexar Imagens:</label>
+            <input type="file" id="imageUpload" accept="image/*" @change="handleImageUpload" multiple>
+          </div>
 
           <!-- Exibir imagens carregadas -->
           <div v-if="bugReport.images.length" class="image-preview">
@@ -122,7 +135,6 @@ export default {
 };
 </script>
 
-
 <style scoped>
 /* Estilos adicionais podem ser adicionados aqui conforme necessário */
 #app {
@@ -132,7 +144,7 @@ export default {
 
 #sidebar {
   width: 300px;
-  background-color: #E1E7E9;
+  background-color: #E5E8E9;
   color: #061494;
   padding: 20px;
 }
@@ -174,11 +186,36 @@ hr {
 }
 
 .container {
-  max-width: 1000px;
-  background-color: #fff;
-  padding: 80px;
+  max-width: 600px;
+  background-color: #E5E8E9;
+  padding: 40px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea,
+select,
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select {
+  appearance: none;
+  background: url('https://image-url-for-dropdown-arrow') no-repeat right #fff;
+  background-size: 20px;
+  padding-right: 30px;
 }
 
 .btn {
@@ -188,22 +225,31 @@ hr {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-top: 15px;
 }
 
 .image-upload {
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .image-preview {
   max-width: 100%;
+  margin-top: 15px;
+}
+
+.image-preview img {
+  width: 100%;
+  height: auto;
   margin-top: 10px;
 }
 
 .success-message,
 .error-message {
-  margin-top: 10px;
-  padding: 10px;
+  margin-top: 15px;
+  padding: 15px;
   border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .success-message {
