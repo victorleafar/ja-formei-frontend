@@ -16,6 +16,7 @@
         <li @click="reportarBug" class="bug">Reportar um Bug</li>
       </ul>
     </div>
+    
 
     <!-- Conteúdo Central -->
     <div id="content">

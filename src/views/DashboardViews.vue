@@ -20,10 +20,51 @@
     <!-- Conteúdo Central -->
     <div id="content">
       <h1>Dashboard</h1>
-      <h2> Em construção</h2>
-    </div>
+      <!-- Indicadores -->
+      <div class="indicator-container">
+        <!-- Indicador 1 -->
+        <div class="indicator">
+          <span>1</span>
+          <h3>Título 1</h3>
+          <p>Descrição do indicador 1.</p>
+        </div>
 
-    
+        <!-- Indicador 2 -->
+        <div class="indicator">
+          <span>2</span>
+          <h3>Título 2</h3>
+          <p>Descrição do indicador 2.</p>
+        </div>
+
+        <!-- Indicador 3 -->
+        <div class="indicator">
+          <span>3</span>
+          <h3>Título 3</h3>
+          <p>Descrição do indicador 3.</p>
+        </div>
+
+        <!-- Indicador 4 -->
+        <div class="indicator">
+          <span>4</span>
+          <h3>Título 4</h3>
+          <p>Descrição do indicador 4.</p>
+        </div>
+
+        <!-- Indicador 5 -->
+        <div class="indicator">
+          <span>5</span>
+          <h3>Título 5</h3>
+          <p>Descrição do indicador 5.</p>
+        </div>
+
+        <!-- Indicador 6 -->
+        <div class="indicator">
+          <span>6</span>
+          <h3>Título 6</h3>
+          <p>Descrição do indicador 6.</p>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -96,6 +137,39 @@ hr {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center; /* Centraliza o conteúdo */
+}
+
+.indicator-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Ajusta o espaço entre os indicadores */
+  gap: 20px; /* Espaçamento entre os indicadores */
+}
+
+.indicator {
+  flex: 0 0 calc(33.33% - 20px); /* Garante três indicadores por linha */
+  max-width: 300px;
+  padding: 20px;
+  border: 2px solid #699BF7;
+  background-color: #F3FAF9;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Ajuste a margem conforme necessário */
+  text-align: center; /* Centraliza o conteúdo dentro do indicador */
+}
+
+.indicator h3 {
+  margin-bottom: 10px;
+}
+
+.indicator p {
+  margin-bottom: 10px;
+}
+
+.indicator span {
+  font-size: 24px;
+  font-weight: bold;
+  color: #699BF7;
 }
 
 .member-photo {
@@ -114,6 +188,4 @@ hr {
   display: flex;
   flex-direction: column;
 }
-
-
 </style>
