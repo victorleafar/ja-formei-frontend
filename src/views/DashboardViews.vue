@@ -101,11 +101,14 @@ export default {
   display: flex;
   min-height: 100vh;
 }
+
 #sidebar {
   width: 300px;
-  background-color: #E1E7E9;
+  background-color: #E5E8E9;
   color: #061494;
   padding: 20px;
+  margin-top: -70px;
+
 }
 
 #profile {
@@ -137,25 +140,31 @@ hr {
   padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Centraliza o conteúdo */
+  align-items: center;
+  /* Centraliza o conteúdo */
 }
 
 .indicator-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around; /* Ajusta o espaço entre os indicadores */
-  gap: 20px; /* Espaçamento entre os indicadores */
+  justify-content: space-around;
+  /* Ajusta o espaço entre os indicadores */
+  gap: 20px;
+  /* Espaçamento entre os indicadores */
 }
 
 .indicator {
-  flex: 0 0 calc(33.33% - 20px); /* Garante três indicadores por linha */
+  flex: 0 0 calc(33.33% - 20px);
+  /* Garante três indicadores por linha */
   max-width: 300px;
   padding: 20px;
   border: 2px solid #699BF7;
   background-color: #F3FAF9;
   border-radius: 10px;
-  margin-bottom: 20px; /* Ajuste a margem conforme necessário */
-  text-align: center; /* Centraliza o conteúdo dentro do indicador */
+  margin-bottom: 20px;
+  /* Ajuste a margem conforme necessário */
+  text-align: center;
+  /* Centraliza o conteúdo dentro do indicador */
 }
 
 .indicator h3 {
@@ -184,8 +193,8 @@ hr {
   background-color: #E1E7E9;
   color: #061494;
   padding: 20px;
-  height: 200vh; /* Ajustado para ocupar 100% da altura da viewport */
+  height: 200vh;
+  /* Ajustado para ocupar 100% da altura da viewport */
   display: flex;
   flex-direction: column;
-}
-</style>
+}</style>

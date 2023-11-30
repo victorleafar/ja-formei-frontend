@@ -16,12 +16,12 @@
         <li @click="reportarBug" class="bug">Reportar um Bug</li>
       </ul>
     </div>
-    
+
 
     <!-- Conteúdo Central -->
     <div id="content">
       <div id="header">
-        <h1>Fórum</h1>
+        <h1>Página Inicial</h1>
         <div id="search-notification">
           <img src="https://icones.pro/wp-content/uploads/2022/02/icone-de-cloche-bleue.png" alt="Ícone de Notificação">
           <i class="fas fa-bell"></i>
@@ -29,113 +29,125 @@
         </div>
       </div>
 
-      <!-- Modais de Indicadores -->
-      <div class="modal-container">
-        <div class="indicator-modal modal-1">
-          <h3>Título 1</h3>
-          <p>Número Indicados: 100</p>
-          <p>Descrição: Lorem ipsum dolor sit amet.</p>
+      <div id="content">
+        <!-- Modais de Indicadores -->
+        <div class="modal-container">
+          <div class="indicator-modal modal-1">
+            <h3>Título 1</h3>
+            <p>Número Indicados: 100</p>
+            <p>Descrição: Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="indicator-modal modal-2">
+            <h3>Título 2</h3>
+            <p>Número Indicados: 150</p>
+            <p>Descrição: Lorem ipsum dolor sit amet.</p>
+          </div>
+
+          <div class="indicator-modal modal-3">
+            <h3>Título 3</h3>
+            <p>Número Indicados: 200</p>
+            <p>Descrição: Lorem ipsum dolor sit amet.</p>
+          </div>
         </div>
 
-        <div class="indicator-modal modal-2">
-          <h3>Título 2</h3>
-          <p>Número Indicados: 150</p>
-          <p>Descrição: Lorem ipsum dolor sit amet.</p>
-        </div>
+        <div id="topics-members">
+          <!-- Lista de Últimos Tópicos -->
+          <div id="recent-topics" class="forum-section">
+            <h2>Últimos Tópicos</h2>
+            <table>
+              <thead>
+                <tr>
+                  <th>Título do Tópico</th>
+                  <th>Categoria</th>
+                  <th>Tópicos</th>
+                  <th>Participantes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Título do Tópico 1</td>
+                  <td>Categoria: A</td>
+                  <td>10</td>
+                  <td>Participantes: 10</td>
+                </tr>
+                <tr>
+                  <td>Título do Tópico 2</td>
+                  <td>Categoria: B</td>
+                  <td>15</td>
+                  <td>Participantes: 15</td>
+                </tr>
+                <tr>
+                  <td>Título do Tópico 3</td>
+                  <td>Categoria: C</td>
+                  <td>20</td>
+                  <td>Participantes: 20</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
 
-        <div class="indicator-modal modal-3">
-          <h3>Título 3</h3>
-          <p>Número Indicados: 200</p>
-          <p>Descrição: Lorem ipsum dolor sit amet.</p>
-        </div>
-      </div>
-
-      <!-- Lista de Últimos Tópicos -->
-      <div id="recent-topics" class="forum-section">
-        <h2>Últimos Tópicos</h2>
-        <table>
-          <thead>
-            <tr>
-              <th>Título do Tópico</th>
-              <th>Categoria</th>
-              <th>Tópicos</th>
-              <th>Participantes</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Título do Tópico 1</td>
-              <td>Categoria: A</td>
-              <td>10</td>
-              <td>Participantes: 10</td>
-            </tr>
-            <tr>
-              <td>Título do Tópico 2</td>
-              <td>Categoria: B</td>
-              <td>15</td>
-              <td>Participantes: 15</td>
-            </tr>
-            <tr>
-              <td>Título do Tópico 3</td>
-              <td>Categoria: C</td>
-              <td>20</td>
-              <td>Participantes: 20</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-      <!-- Lista de Últimos Membros -->
-      <div id="recent-members" class="forum-section">
-        <h2>Últimos Membros</h2>
-        <div class="table-container">
-          <table>
-            <thead>
-              <tr>
-                <th>Foto</th>
-                <th>Nome</th>
-                <th>Graduação</th>
-                <th>Membro desde</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img src="https://png.pngtree.com/png-vector/20190321/ourmid/pngtree-vector-users-icon-png-image_856952.jpg" alt="Membro 1" class="member-photo">
-                </td>
-                <td>Nome do Membro 1</td>
-                <td>Graduação: A</td>
-                <td>Membro desde: 01/01/2023</td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="Membro 2" class="member-photo">
-                </td>
-                <td>Nome do Membro 2</td>
-                <td>Graduação: B</td>
-                <td>Membro desde: 02/01/2023</td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="https://cdn-icons-png.flaticon.com/512/219/219988.png" alt="Membro 3" class="member-photo">
-                </td>
-                <td>Nome do Membro 3</td>
-                <td>Graduação: C</td>
-                <td>Membro desde: 03/01/2023</td>
-              </tr>
-            </tbody>
-          </table>
+          <!-- Lista de Últimos Membros -->
+          <div id="recent-members" class="forum-section">
+            <h2>Últimos Membros</h2>
+            <div class="table-container">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Foto</th>
+                    <th>Nome</th>
+                    <th>Graduação</th>
+                    <th>Membro desde</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img
+                        src="https://png.pngtree.com/png-vector/20190321/ourmid/pngtree-vector-users-icon-png-image_856952.jpg"
+                        alt="Membro 1" class="member-photo">
+                    </td>
+                    <td>Nome do Membro 1</td>
+                    <td>Graduação: A</td>
+                    <td>Membro desde: 01/01/2023</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="Membro 2"
+                        class="member-photo">
+                    </td>
+                    <td>Nome do Membro 2</td>
+                    <td>Graduação: B</td>
+                    <td>Membro desde: 02/01/2023</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <img src="https://cdn-icons-png.flaticon.com/512/219/219988.png" alt="Membro 3"
+                        class="member-photo">
+                    </td>
+                    <td>Nome do Membro 3</td>
+                    <td>Graduação: C</td>
+                    <td>Membro desde: 03/01/2023</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
     <!-- Menu Lateral Direito -->
     <div id="right-sidebar">
       <!-- Eventos Próximos -->
       <div class="event-section">
         <h2>Eventos Próximos</h2>
         <ul>
-          <li>Evento Próximo 1</li>
+          <li><svg id="calendar" style="color: blue" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+              fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+              <path
+                d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"
+                fill="blue"></path>
+            </svg> Evento Próximo 1</li>
           <li>Evento Próximo 2</li>
           <li>Evento Próximo 3</li>
         </ul>
@@ -198,9 +210,11 @@ h1 {
 
 #sidebar {
   width: 300px;
-  background-color: #E1E7E9;
+  background-color: #E5E8E9;
   color: #061494;
   padding: 20px;
+  margin-top: -70px;
+
 }
 
 #profile {
@@ -232,6 +246,9 @@ hr {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  max-height: 550px;
+  /* Defina a altura máxima desejada */
+  overflow-y: auto;
 }
 
 #header {
@@ -272,6 +289,7 @@ hr {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+
 }
 
 .forum-section h2 {
@@ -331,8 +349,10 @@ hr {
   background-color: #E1E7E9;
   color: #061494;
   padding: 20px;
-  height: 100%;
+
   overflow-y: auto;
+
+  margin-top: -70px;
 }
 
 .event-section {
@@ -342,21 +362,27 @@ hr {
 .event-section h2 {
   color: #061494;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .event-section ul {
   list-style: none;
   padding: 0;
+  text-align: left;
 }
 
 .event-section li {
   margin-bottom: 10px;
   cursor: pointer;
+  text-align: left;
 }
+
 .modal-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 20px; /* Ajuste a margem conforme necessário */
+  margin-bottom: 20px;
+
+  /* Ajuste a margem conforme necessário */
 }
 
 .indicator-modal {
@@ -364,7 +390,8 @@ hr {
   padding: 20px;
   border: 2px solid #699BF7;
   background-color: #F3FAF9;
-  border-radius: 10px; /* Adiciona bordas arredondadas */
+  border-radius: 10px;
+  /* Adiciona bordas arredondadas */
   margin-right: 20px;
 }
 
@@ -378,6 +405,16 @@ hr {
   height: 40px;
   border-radius: 50%;
   margin-right: 10px;
+}
+
+.topic-members {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-height: 500px;
+  /* Defina a altura máxima desejada */
+  overflow-y: auto;
 }
 
 .member-details {
@@ -396,7 +433,13 @@ hr {
 }
 
 #recent-members .table-container {
-  max-height: 300px; /* Defina a altura máxima desejada */
-  overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+  max-height: 300px;
+  /* Defina a altura máxima desejada */
+  overflow-y: auto;
+  /* Adiciona uma barra de rolagem vertical quando necessário */
+}
+
+.calendar {
+  -image: url();
 }
 </style>

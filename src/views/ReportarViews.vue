@@ -147,6 +147,8 @@ export default {
   background-color: #E5E8E9;
   color: #061494;
   padding: 20px;
+  margin-top: -70px;
+
 }
 
 #profile {
@@ -181,20 +183,24 @@ hr {
 }
 
 .center-content {
-  justify-content: center;
+  padding: 10px;
+
   align-items: center;
 }
 
 .container {
-  max-width: 600px;
+  justify-content: center;
+  max-width: 6000px;
   background-color: #E5E8E9;
-  padding: 40px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  width: 400px;
+
 }
 
 label {
