@@ -17,10 +17,10 @@
 <script>
 export default {
   methods: {
-    fecharModal() {
-      // Lógica para fechar o modal (pode ser emitindo um evento, alterando uma variável de estado, etc.)
-      console.log("Modal fechado");
+    fecharModal(){
+      this.$router.push('/login');
     },
+    
   },
 };
 </script>

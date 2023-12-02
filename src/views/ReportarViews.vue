@@ -9,6 +9,7 @@
       </div>
       <hr>
       <ul id="menu">
+        <li @click="profile" class="profile">Perfil</li>
         <li @click="inicialpage" class="inicialpage">Página Inicial</li>
         <li @click="dashboard" class="dashboard">Dashboard</li>
         <li @click="forum" class="forum">Fórum</li>
@@ -111,6 +112,9 @@ export default {
       // Por exemplo, você pode adicionar uma mensagem de sucesso ou fazer outra coisa
     },
     // Métodos para as rotas existentes
+    profile(){
+      this.$router.push('/perfil');
+    },
     inicialpage() {
       this.$router.push('/home');
     },

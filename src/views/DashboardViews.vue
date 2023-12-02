@@ -9,6 +9,7 @@
       </div>
       <hr>
       <ul id="menu">
+        <li @click="profile" class="profile">Perfil</li>
         <li @click="inicialpage" class="inicialpage">Página Inicial</li>
         <li @click="dashboard" class="dashboard">Dashboard</li>
         <li @click="forum" class="forum">Fórum</li>
@@ -71,6 +72,10 @@
 <script>
 export default {
   methods: {
+    profile(){
+      this.$router.push('/perfil');
+    },
+    
     inicialpage() {
       this.$router.push('/home');
     },

@@ -9,6 +9,7 @@
       </div>
       <hr>
       <ul id="menu">
+        <li @click="profile" class="profile">Perfil</li>
         <li @click="inicialpage" class="inicialpage">Página Inicial</li>
         <li @click="dashboard" class="dashboard">Dashboard</li>
         <li @click="forum" class="forum">Fórum</li>
@@ -27,6 +28,10 @@
           <input type="text" placeholder="Pesquisar">
         </div>
 
+      </div>
+
+      <div id=criarTopico>
+        <button id="btCriarTopico" @click="criarTopico">Criar Tópico</button>
       </div>
 
       <!-- Lista de Últimos Tópicos -->
@@ -69,6 +74,12 @@
 <script>
 export default {
   methods: {
+    criarTopico(){
+      this.$router.push('/novotopico');
+    },
+    profile(){
+      this.$router.push('/perfil');
+    },
     inicialpage() {
       this.$router.push('/home');
     },
@@ -204,5 +215,15 @@ tr {
 
 tr:hover {
   background-color: #f5f5f5;
-}</style>
+}
+
+
+
+
+#btCriarTopico {
+  width: 10%;
+  align-content: left;
+
+}
+</style>
   

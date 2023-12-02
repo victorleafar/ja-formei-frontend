@@ -1,19 +1,109 @@
 <template>
-    <Router-Link to="/validacao"><button>Go Validação</button></Router-Link>
-    <div>
-      <h1>Tela de cadastro</h1>
-      <!-- Seu formulário de cadastro aqui -->
+  <div id="app">
+    <!-- Menu Lateral -->
+    <div id="sidebar">
+      <!-- ... (mantenha o conteúdo do menu lateral) ... -->
     </div>
-  </template>
-  
-  <script>
-  export default {
-    // Lógica do componente de cadastro aqui
-    name: 'CadastroViews',
-    components: "<div>cadastro</div>"
-  }
-  </script>
-  
-  <style scoped>
-  /* Estilos específicos para a tela de cadastro */
-  </style>
+
+    <!-- Conteúdo Central -->
+    <div id="content">
+      <div id="header">
+        <h1>Cadastro</h1>
+      </div>
+
+      <!-- Formulário de Cadastro -->
+      <div class="event-section">
+        <form>
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+          </div>
+
+          <div class="form-group">
+            <label for="sobrenome">Sobrenome:</label>
+            <input type="text" id="sobrenome" name="sobrenome" required>
+          </div>
+
+          <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+          </div>
+
+          <div class="form-group">
+            <label for="curso">Curso:</label>
+            <select id="curso" name="curso" required>
+              <option value="curso1">Curso 1</option>
+              <option value="curso2">Curso 2</option>
+              <!-- Adicione mais opções conforme necessário -->
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmaSenha">Confirme a Senha:</label>
+            <input type="password" id="confirmaSenha" name="confirmaSenha" required>
+            <div class="button-container">
+            <button id="Cadastrar" @click="cadastrar">Cadastrar</button>
+          </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Menu Lateral Direito -->
+    <div id="right-sidebar">
+      <!-- ... (mantenha o conteúdo do menu lateral direito) ... -->
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  methods: {
+    cadastrar(){
+      this.$router.push('/validacao');
+    },
+    
+  },
+};
+</script>
+
+<style scoped>
+/* ... (mantenha os estilos existentes) ... */
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+form {
+
+  flex-direction: column;
+}
+.form-group input {
+  width: 100%; /* Ou a largura desejada, como 200px */
+  max-width: 300px; /* Adicione uma largura máxima */
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 5px 0; /* Adicione um pequeno espaçamento vertical entre os campos */
+  /* Adicione outras propriedades de estilo conforme necessário */
+}
+.custom-button {
+  width: 200px; /* ou o tamanho desejado em pixels ou outra unidade */
+  padding: 10px;
+  margin: 5px;
+  box-sizing: border-box;
+  background-color: #12B82D;
+  color: #fff;
+  cursor: pointer;
+}
+
+</style>
