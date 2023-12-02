@@ -459,8 +459,4 @@ hr {
   overflow-y: auto;
   /* Adiciona uma barra de rolagem vertical quando necessário */
 }
-
-.calendar {
-  -image: url();
-}
 </style>

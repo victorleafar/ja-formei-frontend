@@ -392,8 +392,5 @@ hr {
     height: 100px
 }
 
-.calendar {
-    -image: url();
-}
 </style>
   

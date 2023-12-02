@@ -2,7 +2,7 @@
   <div id="app">
     <!-- Menu Lateral -->
     <div id="sidebar">
-      <!-- ... (mantenha o conteúdo do menu lateral) ... -->
+  
     </div>
 
     <!-- Conteúdo Central -->
@@ -32,9 +32,14 @@
           <div class="form-group">
             <label for="curso">Curso:</label>
             <select id="curso" name="curso" required>
-              <option value="curso1">Curso 1</option>
-              <option value="curso2">Curso 2</option>
-              <!-- Adicione mais opções conforme necessário -->
+              <option value="curso1">Curso de graduação 1</option>
+              <option value="curso2">Curso de graduaçã 2</option>
+              <option value="curso2">Curso de graduaçã 3</option>
+              <option value="curso2">Curso de graduaçã 4</option>
+              <option value="curso2">Curso de graduaçã 5</option>
+              <option value="curso2">Curso de graduaçã 6</option>
+              <option value="curso2">Curso de graduaçã 7</option>
+              
             </select>
           </div>
 
