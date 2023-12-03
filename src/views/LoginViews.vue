@@ -8,7 +8,7 @@
           <input v-model="username" type="text" name="username" placeholder="Usuário">
           <input v-model="password" type="password" name="password" placeholder="Senha">
           <br>
-          <a href="/redefinirsenha" style="text-decoration: underline; color: #12B82D;">Esqueceu a senha?</a>
+          <a href="/redefinirsenhaemail" style="text-decoration: underline; color: #12B82D;">Esqueceu a senha?</a>
           <br><br>
           <button type="submit">ENTRAR</button>
         </form>

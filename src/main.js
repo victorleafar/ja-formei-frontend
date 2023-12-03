@@ -11,6 +11,8 @@ import EventosEncontros from './views/EventosEncontros'
 import PerfilViews from './views/PerfilViews'
 import NovoTopicoViews from './views/NovoTopicoViews'
 import RedefinirSenhaViews from './views/RedefinirSenhaViews'
+import RedefinirsenhaEmail from './views/RecuperarsenhaEmail'
+import RedefinirsenhaVerificar from './views/RecuperarsenhaVerificar'
 import TopicoCriadoViews from './views/TopicoCriadoViews'
 // 1 - import view
 import { createRouter, createWebHistory } from 'vue-router'
@@ -30,6 +32,8 @@ const routes = [
   { path: '/perfil', component: PerfilViews },
   { path: '/novotopico', component: NovoTopicoViews },
   { path: '/redefinirsenha', component: RedefinirSenhaViews },
+  { path: '/redefinirsenhaemail', component: RedefinirsenhaEmail },
+  { path: '/redefinirsenhaverificar', component: RedefinirsenhaVerificar },
   { path: '/topicocriado', component: TopicoCriadoViews },
 
 ]
