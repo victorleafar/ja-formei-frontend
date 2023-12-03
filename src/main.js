@@ -11,6 +11,7 @@ import EventosEncontros from './views/EventosEncontros'
 import PerfilViews from './views/PerfilViews'
 import NovoTopicoViews from './views/NovoTopicoViews'
 import RedefinirSenhaViews from './views/RedefinirSenhaViews'
+import TopicoCriadoViews from './views/TopicoCriadoViews'
 // 1 - import view
 import { createRouter, createWebHistory } from 'vue-router'
 
@@ -29,6 +30,7 @@ const routes = [
   { path: '/perfil', component: PerfilViews },
   { path: '/novotopico', component: NovoTopicoViews },
   { path: '/redefinirsenha', component: RedefinirSenhaViews },
+  { path: '/topicocriado', component: TopicoCriadoViews },
 
 ]
 

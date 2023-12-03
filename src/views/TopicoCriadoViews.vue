@@ -13,7 +13,7 @@
                 <li @click="inicialpage" class="inicialpage">Página Inicial</li>
                 <li @click="dashboard" class="dashboard">Dashboard</li>
                 <li @click="forum" class="forum">Fórum</li>
-                <li @click="Topicos" class="Topicos">Topicos e Encontros</li>
+                <li @click="eventos" class="eventos">Eventos e Encontros</li>
                 <li @click="reportarBug" class="bug">Reportar um Bug</li>
             </ul>
         </div>
@@ -22,7 +22,7 @@
         <!-- Conteúdo Central -->
         <div id="content">
             <div id="header">
-                <h1>Novo Tópico</h1>
+                <h1>Fórum</h1>
                 <div id="search-notification">
                     <img src="https://icones.pro/wp-content/uploads/2022/02/icone-de-cloche-bleue.png"
                         alt="Ícone de Notificação">
@@ -32,30 +32,49 @@
             </div>
 
             <div id="content">
-                <!-- Modais de Indicadores -->
-                <div class="event-section">
-                    <h2>Novo Tópico</h2>
-                    <form>
-                        <!-- Campos do formulário -->
-                        <label for="nomeTopico">Título do Topico:</label>
-                        <input type="text" id="nomeTopico" name="nomeTopico" required>
 
-                        <label for="categoriaTopico">Escolha uma categoria:</label>
-                        <select id="categoriaTopico" name="categoriaTopico">
-                            <option value="Aulas">Aulas</option>
-                            <option value="Professores">Professores</option>
-                            <option value="Disciplinas">Disciplinas</option>
-                            <option value="Empregos">Empregos</option>
-                            <option value="Material Didático">Material Didático</option>
-                        </select>
+                <div id="topics-members">
+                    <!-- Lista de Últimos Tópicos -->
 
 
-                        <p>Digite o texto:</p>
-                        <label for="TextoTopico"></label>
-                        <textarea id="textoTopico" name="textoTopico" required></textarea>
+                    <div id="recent-topics" class="forum-section">
+                        <img src="https://cdn-icons-png.flaticon.com/512/147/147142.png" alt="Avatar"
+                            class="avatartop">Usuario
+                        <h2>Título do tópico</h2>
+                        <div id="texto">
+                            Como desenvolvedor, escolhi adotar o Vue.js como meu principal framework front-end, e as
+                            vantagens
+                            são notáveis. Primeiramente, a simplicidade da sua sintaxe torna a codificação uma experiência
+                            intuitiva e eficiente. Sua capacidade de reatividade permite uma atualização instantânea da
+                            interface do usuário, resultando em uma experiência mais fluida para o usuário final.
 
-                        <button type="button" class="criar-topico" @click="criarTopico">Criar Tópico</button>                    
-                    </form>
+                            Além disso, a modularidade do Vue.js facilita a organização do código, tornando-o mais legível e
+                            manutenível. A flexibilidade do framework é evidente, pois posso integrá-lo facilmente a outros
+                            projetos, adaptando-me às necessidades específicas de cada um. A comunidade ativa e solidária é
+                            uma
+                            enorme vantagem, proporcionando acesso a uma ampla gama de recursos e soluções para desafios
+                            comuns.
+                        </div>
+                        <input>
+                        <input type="submit" value="Responder" id="responder">
+
+                    </div>
+
+                    <div id="recent-topics" class="forum-section">
+                        <img src="https://cdn-icons-png.flaticon.com/512/147/147142.png" alt="Avatar"
+                            class="avatartop">Usuario
+                        <h2>Título do tópico - Resposta</h2>
+                        <div id="texto">
+                            A eficiência de Vue.js na criação de Single Page Applications (SPAs) é notável, garantindo uma
+                            experiência de usuário rápida e responsiva. A abordagem de componentes reutilizáveis facilita a
+                            escalabilidade do projeto, permitindo-me construir aplicações robustas de maneira eficiente. Em
+                            resumo, a escolha pelo Vue.js tem se mostrado uma decisão acertada, proporcionando uma
+                            experiência de desenvolvimento agradável e resultados excepcionais.
+                        </div>
+
+
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -111,14 +130,6 @@
                     <!-- Adicione mais eventos de amigos conforme necessário -->
                 </ul>
             </div>
-            <!-- Topicos Próximos -->
-
-
-            <!-- Lista de Topicos -->
-
-
-            <!-- Topicos de Amigos -->
-
         </div>
     </div>
 </template>
@@ -126,9 +137,6 @@
 <script>
 export default {
     methods: {
-        criarTopico() {
-            this.$router.push('/topicocriado');
-        },
         profile(){
             this.$router.push('/perfil');
         },
@@ -141,8 +149,8 @@ export default {
         forum() {
             this.$router.push('/forum');
         },
-        Topicos() {
-            this.$router.push('/Topicos');
+        eventos() {
+            this.$router.push('/eventos');
         },
         reportarBug() {
             this.$router.push('/reportar');
@@ -178,6 +186,12 @@ h1 {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+}
+
+.avatartop {
+    width: 50px;
+    height: 50px;
+    margin-right: 450px;
 }
 
 hr {
@@ -390,10 +404,21 @@ hr {
     /* Adiciona uma barra de rolagem vertical quando necessário */
 }
 
-#textoTopico {
-    width: 100%;
-    height: 100px
+#texto {
+
+    text-align: left;
 }
 
-</style>
+#responder {
+    width: 100px;
+    height: 50px;
+    margin-left: 450px;
+
+}
+
+
+
+.calendar {
+    -image: url();
+}</style>
   

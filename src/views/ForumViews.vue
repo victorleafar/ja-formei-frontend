@@ -46,24 +46,25 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Título do Tópico 1</td>
-              <td>Categoria: A</td>
-              <td>10</td>
-              <td>Participantes: 10</td>
-            </tr>
-            <tr>
-              <td>Título do Tópico 2</td>
-              <td>Categoria: B</td>
-              <td>15</td>
-              <td>Participantes: 15</td>
-            </tr>
-            <tr>
-              <td>Título do Tópico 3</td>
-              <td>Categoria: C</td>
-              <td>20</td>
-              <td>Participantes: 20</td>
-            </tr>
+            <tr onclick="location.href='/topicocriado';" style="cursor: pointer;">
+              <td><a href="/topicocriado">Título do Tópico 1</a></td>
+              <td><a href="/topicocriado">Categoria: A</a></td>
+              <td><a href="/topicocriado">10</a></td>
+              <td><a href="/topicocriado">Participantes: 10</a></td>
+          </tr>
+
+          <tr onclick="location.href='/topicocriado';" style="cursor: pointer;">
+            <td><a href="/topicocriado">Título do Tópico 2</a></td>
+            <td><a href="/topicocriado">Categoria: B</a></td>
+            <td><a href="/topicocriado">15</a></td>
+            <td><a href="/topicocriado">Participantes: 15</a></td>
+         </tr>
+         <tr onclick="location.href='/topicocriado';" style="cursor: pointer;">
+              <td><a href="/topicocriado">Título do Tópico 3</a></td>
+              <td><a href="/topicocriado">Categoria: C</a></td>
+              <td><a href="/topicocriado">20</a></td>
+              <td><a href="/topicocriado">Participantes: 20</a></td>
+          </tr>
           </tbody>
         </table>
       </div>
@@ -133,6 +134,14 @@ h1 {
   height: 80px;
   border-radius: 50%;
 }
+tr {
+        cursor: pointer;
+    }
+
+    td a {
+        text-decoration: none;
+        color: inherit; /* Isso mantém a cor original do texto */
+    }
 
 hr {
   border: 1px solid #061494;
