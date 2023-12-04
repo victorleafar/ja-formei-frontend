@@ -23,7 +23,7 @@
       <div id="header">
         <h1>Eventos e Encontros</h1>
         <div id="search-notification">
-          <img src="https://icones.pro/wp-content/uploads/2022/02/icone-de-cloche-bleue.png" alt="Ícone de Notificação">
+          <img style="height: 30px; width: 30px;" src="https://icones.pro/wp-content/uploads/2022/02/icone-de-cloche-bleue.png" alt="Ícone de Notificação">
           <i class="fas fa-bell"></i>
           <input type="text" placeholder="Pesquisar">
         </div>
