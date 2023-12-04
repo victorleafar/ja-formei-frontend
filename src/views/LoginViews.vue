@@ -51,11 +51,17 @@ export default {
 </script>
 
 <style>
+
+@font-face {
+  font-family: Akshar;
+  src: url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+}
+
 html, body {
   margin: 0;
   padding: 0;
   background-color: #D7E0E4;
-  font-family: Arial, sans-serif;
+  font-family: 'Akshar', sans-serif;
   height: 100%;
   overflow-y: hidden;
 }
@@ -82,6 +88,7 @@ html, body {
   border-radius: 10px;
   text-align: center;
   width: 300px;
+  font-family: 'Akshar', sans-serif;
 }
 
 .logo {
@@ -94,36 +101,52 @@ html, body {
 h1 {
   color: #061494;
   font-size: 20px;
+  font-family: 'Akshar', sans-serif;
 }
 
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: 'Akshar', sans-serif;
 }
 
 input {
   width: 100%;
   padding: 10px;
   margin: 5px;
+  color: #F5F5F5;
   box-sizing: border-box;
+  font-family: 'Akshar', sans-serif;
+  border-radius: 14px; 
+  box-shadow: 0px 0px 10px 0px rgba(112, 112, 112, 0.765);
+  border-color: rgba(180, 182, 180, 0.765);
 }
 
 button {
-  width: 100%;
+  width: 90%;
   padding: 10px;
   margin: 5px;
   box-sizing: border-box;
   background-color: #12B82D;
-  color: #fff;
+  color: #f5f5f5;
   cursor: pointer;
+  font-family: 'Akshar', sans-serif;
+  border-radius: 18px; 
+  box-shadow: 0px 0px 10px 0px rgba(227, 228, 227, 0.765);
+  border-color: rgba(39, 165, 39, 0.765);
 }
-
+button:hover {
+  border: 2px solid rgb(81, 221, 81);
+  transform: scale(1.1); 
+  box-shadow: 0 5px 15px rgba(232, 230, 230, 0.6);
+}
 a.create-account {
   display: block; /* Para tornar o link um bloco e ocupar a largura total */
   margin-top: 10px; /* Adicione margem superior conforme necessário */
   color: #061494; /* Adicione a cor desejada para o texto padrão */
   text-decoration: none; /* Remove sublinhado padrão */
+  font-family: 'Akshar', sans-serif;
 }
 
 a.create-account .blue-underlined {

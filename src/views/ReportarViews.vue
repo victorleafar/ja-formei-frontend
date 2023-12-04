@@ -179,6 +179,13 @@ hr {
   cursor: pointer;
 }
 
+#menu li:hover{
+  border: 2px solid rgba(246, 242, 242, 0.6);
+  transform: scale(1.08);
+  background-color: rgba(246, 242, 242, 0.6);
+  box-shadow: 0 5px 15px rgba(232, 230, 230, 0.6);
+}
+
 #content {
   flex: 1;
   padding: 20px;
