@@ -222,6 +222,7 @@ label {
 textarea,
 select,
 input {
+  color: black;
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -236,7 +237,7 @@ select {
 }
 
 .btn {
-  background-color: #007bff;
+  background-color: #12B82D;
   color: #fff;
   padding: 10px 15px;
   border: none;
