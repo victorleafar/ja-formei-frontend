@@ -25,7 +25,7 @@
     <div class="modal" v-show="showModal">
       <!-- Conteúdo do modal de cadastro -->
       <h1>Cadastro</h1>
-      <!-- Adicione os campos e elementos necessários para o cadastro -->
+      <!-- Adicionar os campos e elementos necessários para o cadastro -->
       <button @click="closeModal">Fechar</button>
     </div>
   </div>
@@ -33,7 +33,7 @@
 
 <script>
 export default {
-  // Restante do seu código ...
+  // Restante do código ...
 
   methods: {
     login() {
@@ -115,7 +115,7 @@ input {
   width: 100%;
   padding: 10px;
   margin: 5px;
-  color: black;
+  color: #F5F5F5;
   box-sizing: border-box;
   font-family: 'Akshar', sans-serif;
   border-radius: 14px; 
@@ -129,31 +129,32 @@ button {
   margin: 5px;
   box-sizing: border-box;
   background-color: #12B82D;
-  color: rgb(248, 247, 247);
+  color: #f5f5f5;
   cursor: pointer;
   font-family: 'Akshar', sans-serif;
   border-radius: 18px; 
   box-shadow: 0px 0px 10px 0px rgba(227, 228, 227, 0.765);
   border-color: rgba(39, 165, 39, 0.765);
 }
+
 button:hover {
   border: 2px solid rgb(81, 221, 81);
   transform: scale(1.1); 
   box-shadow: 0 5px 15px rgba(232, 230, 230, 0.6);
 }
+
 a.create-account {
-  display: block; /* Para tornar o link um bloco e ocupar a largura total */
-  margin-top: 10px; /* Adicione margem superior conforme necessário */
-  color: #061494; /* Adicione a cor desejada para o texto padrão */
-  text-decoration: none; /* Remove sublinhado padrão */
+  display: block;
+  margin-top: 10px;
+  color: #061494;
+  text-decoration: none;
   font-family: 'Akshar', sans-serif;
 }
 
 a.create-account .blue-underlined {
-  color: #0000FF; /* Adicione a cor desejada para o texto azul */
-  text-decoration: underline; /* Adiciona sublinhado para o texto azul */
+  color: #0000FF;
+  text-decoration: underline;
 }
-
 
 .or {
   display: flex;
@@ -182,6 +183,7 @@ a.create-account .blue-underlined {
   border-radius: 10px;
   z-index: 1000;
 }
+
 .google-button {
   width: 100%;
   display: inline-block;
@@ -193,9 +195,9 @@ a.create-account .blue-underlined {
   margin: 5px;
   box-sizing: border-box;
   cursor: pointer;
-  font-size: 14px; /* Tamanho da fonte personalizado */
-  border-radius: 5px; /* Borda arredondada */
-  transition: background-color 0.3s, color 0.3s; /* Adiciona uma transição suave */
+  font-size: 14px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .google-button:hover {
@@ -205,9 +207,11 @@ a.create-account .blue-underlined {
 
 .google-icon {
   display: inline-block;
-  width: 16px; /* Largura do ícone */
-  height: 16px; /* Altura do ícone */
-  background: url('https://imagepng.org/google-icone-icon/google-icon/') center/cover no-repeat; /* Corrigido o caminho para o ícone do Google */
-  margin-right: 6px; /* Espaçamento entre o ícone e o texto */
+  width: 16px;
+  height: 16px;
+  background: url('https://imagepng.org/google-icone-icon/google-icon/') center/cover no-repeat;
+  margin-right: 6px;
 }
+
 </style>
+
