@@ -122,6 +122,11 @@ h1 {
   text-align: left;
 }
 
+input {
+  height: 30px; 
+  font-family: 'Akshar', sans-serif;
+}
+
 #sidebar {
   width: 300px;
   background-color: #E5E8E9;
