@@ -1,14 +1,14 @@
 <template>
-  <div id="app">
+  <div id="app" style="background-color: #D7E0E4; display: flex; align-items: center; justify-content: center;">
     <!-- Menu Lateral -->
     <div id="sidebar">
   
     </div>
 
     <!-- Conteúdo Central -->
-    <div id="content">
+    <div id="content" class="box-center">
       <div id="header">
-        <h1>Cadastro</h1>
+        <h1 style="font-size: 26px;">Cadastro</h1>
       </div>
 
       <!-- Formulário de Cadastro -->
@@ -33,12 +33,12 @@
             <label for="curso">Curso:</label>
             <select id="curso" name="curso" required>
               <option value="curso1">Curso de graduação 1</option>
-              <option value="curso2">Curso de graduaçã 2</option>
-              <option value="curso2">Curso de graduaçã 3</option>
-              <option value="curso2">Curso de graduaçã 4</option>
-              <option value="curso2">Curso de graduaçã 5</option>
-              <option value="curso2">Curso de graduaçã 6</option>
-              <option value="curso2">Curso de graduaçã 7</option>
+              <option value="curso2">Curso de graduação 2</option>
+              <option value="curso2">Curso de graduação 3</option>
+              <option value="curso2">Curso de graduação 4</option>
+              <option value="curso2">Curso de graduação 5</option>
+              <option value="curso2">Curso de graduação 6</option>
+              <option value="curso2">Curso de graduação 7</option>
               
             </select>
           </div>
@@ -57,7 +57,7 @@
             <label for="confirmaSenha">Confirme a Senha:</label>
             <input type="password" id="confirmaSenha" name="confirmaSenha" required>
             <div class="button-container">
-            <button id="Cadastrar" @click="cadastrar">Cadastrar</button>
+            <button id="Cadastrar" class="custom-button" @click="cadastrar">Cadastrar</button>
           </div>
           </div>
         </form>
@@ -84,7 +84,32 @@ export default {
 
 <style scoped>
 /* ... (mantenha os estilos existentes) ... */
+@font-face {
+  font-family: Akshar;
+  src: url('https://fonts.googleapis.com/css2?family=Akshar&display=swap');
+}
+label {
+  font-size: 15px;
+  font-family: 'Akshar', sans-serif;
+}
+ input {
+  height: 25px; 
+  width: 100x;
+  font-family: 'Akshar', sans-serif;
+}
 
+.box-center{
+  background-color: #E5E8E9;
+  padding: 20px; text-align: center; 
+  border-radius: 8px; 
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75); 
+  margin-top: -35px; 
+  color: #061494; 
+  font-weight: bold; 
+  font-size: 25px;
+  height: 630px; 
+  width: 500px;
+}
 .form-group {
   margin-bottom: 20px;
 }
@@ -94,6 +119,7 @@ form {
   flex-direction: column;
 }
 .form-group input {
+  font-size: 18px;
   width: 100%; /* Ou a largura desejada, como 200px */
   max-width: 300px; /* Adicione uma largura máxima */
   padding: 10px;
@@ -109,6 +135,8 @@ form {
   background-color: #12B82D;
   color: #fff;
   cursor: pointer;
+  border-radius: 8px; 
+  font-family: 'Akshar', sans-serif;
 }
 
 </style>
