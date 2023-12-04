@@ -115,7 +115,7 @@ input {
   width: 100%;
   padding: 10px;
   margin: 5px;
-  color: #F5F5F5;
+  color: black;
   box-sizing: border-box;
   font-family: 'Akshar', sans-serif;
   border-radius: 14px; 
@@ -129,7 +129,7 @@ button {
   margin: 5px;
   box-sizing: border-box;
   background-color: #12B82D;
-  color: #f5f5f5;
+  color: rgb(248, 247, 247);
   cursor: pointer;
   font-family: 'Akshar', sans-serif;
   border-radius: 18px; 
